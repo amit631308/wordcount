@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2</title>
+  </head>
+  <body>
+    <button type="button" name="button"> <a href="{% url 'home'%}">Back to Home</a>   </button>
+    <h1>counted</h1>
+    {{text}}<br>
+    number of word = {{text2}}
+
+    <br><br>
+{% for word,value in word_dict %}
+ {{word}} = {{value}}
+ <br>
+ {% endfor %}
+
+<button type="button" name="button"> <a href="{% url 'about' %}">About</a> </button>
+  </body>
+</html>
