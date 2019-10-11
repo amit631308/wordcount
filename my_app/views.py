@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import operator
 def index(request):
-    return render(request,'1home.html')
+    return render(request,'home.html')
 
 def count(request):
     data = request.GET['text']
